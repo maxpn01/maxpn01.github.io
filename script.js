@@ -41,16 +41,16 @@ infoBtn.addEventListener("click", () => {
     infoSection.style.display = "flex";
 });
 
-postImages.forEach(image => {
-    image.onclick = () => {
-        popupSection.style.display = "block";
-        popupImage.src = image.getAttribute("src");
-    }
-});
+// postImages.forEach(image => {
+//     image.onclick = () => {
+//         popupSection.style.display = "block";
+//         popupImage.src = image.getAttribute("src");
+//     }
+// });
 
-popupCloseBtn.onclick = () => {
-    popupSection.style.display = "none";
-};
+// popupCloseBtn.onclick = () => {
+//     popupSection.style.display = "none";
+// };
 
 /*** CHANGING DARK/LIGHT THEME ***/
 
