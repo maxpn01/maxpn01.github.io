@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Max Padalkin">
+    <meta name="description" content="My digital HQ.">
+    <meta name="keywords"
+        content="max, maxim, padalkin, work, posts, info, hq, home, personal, portfolio, html, css">
+
+    <title>Max Padalkin</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/site.webmanifest">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="nav">
+            <ul class="nav-links">
+                <li class="nav-link-li"><a href="#" class="nav-link__a link-active" id="work-btn">work</a><span class="nav-link__span">/</span></li>
+                <li class="nav-link-li"><a href="#" class="nav-link__a" id="posts-btn">posts</a><span class="nav-link__span">/</span></li>
+                <li class="nav-link-li"><a href="#" class="nav-link__a" id="info-btn">info</a></li>
+            </ul>
+        </nav>
+
+        <button class="theme-btn">
+                <i class="ri-moon-line theme-icon" id="theme-icon"></i>
+        </button>
+    </header>
+    
+
+    <div class="work">
+        <div class="work-cards">
+            <div class="work-card">
+                <h3 class="work-card__title">Password Generator</h3>
+                <p class="work-card__description">Password generator built with HTML/CSS/JS.</p>
+                <div class="work-card-links">
+                    <a href="https://github.com/maxpn01/password-generator-web" target="_blank" class="work-card__link">code</a>
+                    <a href="https://maxpn01.github.io/password-generator-web" target="_blank" class="work-card__link">demo</a>
+                </div>
+            </div>
+            
+            <div class="work-card">
+                <h3 class="work-card__title">Dictionary Web</h3>
+                <p class="work-card__description">Dictionary made with HTML/CSS/JS and Free Dictionary API.</p>
+                <div class="work-card-links">
+                    <a href="https://github.com/maxpn01/dictionary-web" target="_blank" class="work-card__link">code</a>
+                    <a href="https://maxpn01.github.io/dictionary-web/" target="_blank" class="work-card__link">demo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="posts">
+        <!-- <div class="post">
+            <h3 class="post-title"><time datetime="2023-11-7 17:30">Month Day, Year Time</time></h3>
+
+            <p class="post-text">text<em><a href="#" target="_blank" style="color: var(--accent-color); text-decoration: underline;">text link</a></em></p>
+            <p class="post-text tags">#tagname</p>
+
+            <div class="post-images">
+                <img src="assets/img/#" class="post__image" alt="">
+                <img src="assets/img/#" class="post__image" alt="">
+                <img src="assets/img/#" class="post__image" alt="">
+            </div>
+
+            <div class="popup-section">
+                <span class="popup-section__close">&times;</span>
+                <img src="assets/img/#" class="popup-section__image" alt="">
+            </div>
+        </div> -->
+    </div>
+
+    <div class="info">
+        <div class="info-card">
+            <img src="assets/img/pfp.webp" class="info-card__img" alt="Profile Picture of Max Padalkin">
+
+            <h3 class="info-card__name">Max Padalkin</h3>
+            <span class="info-card__description">Front-end Developer</span>
+
+            <ul class="info-card__socials">
+                <li class="info-card__socials-el">
+                    <a href="https://github.com/maxpn01" target="_blank" class="info-card__socials-link" aria-label="Link to my github account" id="github-link">
+                        <i class="ri-github-line"></i>
+                    </a>
+                </li>
+
+                <li class="info-card__socials-el">
+                    <a href="https://twitter.com/maxpn01" target="_blank" class="info-card__socials-link" aria-label="Link to my twitter account" id="twitter-link">
+                        <i class="ri-twitter-line"></i>
+                    </a>
+                </li>
+
+                <li class="info-card__socials-el">
+                    <a href="https://www.instagram.com/m.a.x.p.n/" target="_blank" class="info-card__socials-link" aria-label="Link to my instagram account" id="instagram-link">
+                        <i class="ri-instagram-line"></i>
+                    </a>
+                </li>
+
+                <li class="info-card__socials-el">
+                    <a href="mailto:maxim.padalkin.p@gmail.com" target="_blank" class="info-card__socials-link" aria-label="Displays my email" id="email" title="maxim.padalkin.p@gmail.com">
+                        <i class="ri-mail-line"></i>
+                    </a>
+                </li>
+
+                <li class="info-card__socials-el">
+                    <a href="https://www.linkedin.com/in/max-padalkin-4b8484283/" target="_blank" class="info-card__socials-link" aria-label="Link to my linkedin account" id="linkedin-link">
+                        <i class="ri-linkedin-line"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="info-description">
+            <p class="info-description__p">
+                Hi there! I'm an aspiring programmer and artist. 
+                As of now, my primary focus lies in front-end development and design. 
+                My aim is to work on exciting projects while maintaining a simple and minimalistic design aesthetic.
+            </p>
+            <p class="info-description__p">
+                Aside from programming, I enjoy drawing and writing. 
+                Occasionally, I plan to share my thoughts, inspirations, artwork, and whatever comes to mind on social media and the "posts" page.
+            </p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>
