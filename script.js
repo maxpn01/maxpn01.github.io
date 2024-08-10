@@ -10,36 +10,20 @@ const popupSection = d.querySelector(".popup-section");
 const popupCloseBtn = d.querySelector(".popup-section__close");
 const popupImage = d.querySelector(".popup-section__image");
 
-workBtn.addEventListener("click", () => {
-    if (workBtn.className.match !== "link-active")
-        workBtn.classList.add("link-active");
-    postsBtn.classList.remove("link-active");
-    infoBtn.classList.remove("link-active");
+function setActiveSection(activeBtn, activeSection) {
+    [workBtn, postsBtn, infoBtn].forEach(btn => 
+        btn.classList.toggle("link-active", btn === activeBtn));
+    
+    [workSection, postsSection, infoSection].forEach(section => 
+        section.style.display = section === activeSection ? 
+            (section === workSection ? "block" : "flex") : 
+            "none"
+    );
+}
 
-    workSection.style.display = "flex";
-    postsSection.style.display = "none";
-    infoSection.style.display = "none";
-});
-
-postsBtn.addEventListener("click", () => {
-    workBtn.classList.remove("link-active");
-    postsBtn.classList.toggle("link-active");
-    infoBtn.classList.remove("link-active");
-
-    workSection.style.display = "none";
-    postsSection.style.display = "flex";
-    infoSection.style.display = "none";
-});
-
-infoBtn.addEventListener("click", () => {
-    workBtn.classList.remove("link-active");
-    postsBtn.classList.remove("link-active");
-    infoBtn.classList.toggle("link-active");
-
-    workSection.style.display = "none";
-    postsSection.style.display = "none";
-    infoSection.style.display = "flex";
-});
+workBtn.addEventListener("click", () => setActiveSection(workBtn, workSection));
+postsBtn.addEventListener("click", () => setActiveSection(postsBtn, postsSection));
+infoBtn.addEventListener("click", () => setActiveSection(infoBtn, infoSection));
 
 // postImages.forEach(image => {
 //     image.onclick = () => {

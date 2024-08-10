@@ -107,8 +107,6 @@ a {
 /*** WORK SECTION ***/
 
 .work {
-    justify-content: center;
-    align-items: center;
     margin: var(--section-margin);
 }
 
@@ -119,7 +117,7 @@ a {
 
 .work-card {
     margin-bottom: 2rem;
-    border: solid 1px rgb(128,128,128);
+    border: solid 1px rgb(128, 128, 128);
     border-radius: .5rem;
 }
 
@@ -255,7 +253,7 @@ a {
 #github-link:hover { color: #6cc644; }
 #twitter-link:hover { color: #1DA1F2; }
 #instagram-link:hover { color: #C13584; }
-#email:hover { color: #EA4335 }
+#email:hover { color: #EA4335; }
 #linkedin-link:hover { color: #0A66C2; }
 
 .info-description {
@@ -274,7 +272,7 @@ a {
 
 @media screen and (min-width: 600px) {
     :root {
-        --section-margin: 1.6rem 5rem;
+        --section-margin: 1.75rem 5rem;
     }
 }
 
@@ -330,7 +328,7 @@ a {
 @media screen and (min-width: 1600px) {
     :root {
         --nav-padding: 2rem 0;
-        --section-margin: 3.5rem 30rem;
+        --section-margin: 3rem 30rem;
     }
 
     .theme-btn {
